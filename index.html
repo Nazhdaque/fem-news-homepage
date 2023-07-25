@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"
+			class="root-scroller">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+				content="IE=edge">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title"
+				content="FEM | News homepage">
+	<meta property="og:description"
+				content="Frontend Mentor challenge solution using CSS Grid, Lit-HTML">
+	<meta property="og:type"
+				content="website">
+	<meta property="og:url"
+				content="https://nazhdaque.github.io/fem-news-homepage/">
+	<meta property="og:image"
+				content="./images/preview.jpg">
+	<meta property="og:image:width"
+				content="900">
+	<meta property="og:image:height"
+				content="660">
+	<!-- Twitter -->
+	<meta name="twitter:card"
+				content="summary_large_image">
+	<meta name="twitter:title"
+				content="FEM | News homepage">
+	<meta name="twitter:description"
+				content="Frontend Mentor challenge solution using CSS Grid, Lit-HTML">
+	<meta name="twitter:url"
+				content="https://nazhdaque.github.io/fem-news-homepage/">
+	<meta name="twitter:image"
+				content="./images/preview.jpg">
+	<!--  -->
+	<meta name="description"
+				content="Frontend Mentor challenge solution using CSS Grid, Lit-HTML">
+	<title>FEM | News homepage</title>
+	<link rel="icon"
+				type="image/png"
+				sizes="32x32"
+				href="/fem-news-homepage/images/favicon-32x32.png">
+  <script type="module" crossorigin src="/fem-news-homepage/assets/index-25d3bc55.js"></script>
+  <link rel="stylesheet" href="/fem-news-homepage/assets/index-fffc37c9.css">
+</head>
+
+<body class="layout-body">
+	<header class="main-header layout-center">
+		<div class="main-header__group">
+			<a href="#"
+				 class="brand-logo logo-link"
+				 aria-label="home">
+				<svg class="logo-link__img">
+					<use href="/fem-news-homepage/images/sprites/logo.svg#logo"></use>
+				</svg>
+			</a>
+
+			<nav class="md--d-none"
+					 aria-label="Header">
+				<ul class="nav-links">
+					<li><a href="#"
+							 class="nav-links__link">Home</a></li>
+					<li><a href="#"
+							 class="nav-links__link">New</a></li>
+					<li><a href="#"
+							 class="nav-links__link">Popular</a></li>
+					<li><a href="#"
+							 class="nav-links__link">Trending</a></li>
+					<li><a href="#"
+							 class="nav-links__link">Categories</a></li>
+				</ul>
+			</nav>
+
+			<button class="toggle md--d-grid"
+							aria-label="show / hide navigation panel">
+				<span class="toggle-img"></span>
+			</button>
+
+		</div>
+	</header>
+
+	<main class="main-content">
+		<section class="layout-center hero">
+			<div class="hero__group grid-x col-3 md--col-1">
+				<picture class="hero__img col-span-2 md--col-span-0">
+					<source srcset="/fem-news-homepage/images/image-web-3-mobile.jpg"
+									media="(max-width: 576px)">
+					<img class="o-fit-cover"
+							 src="/fem-news-homepage/images/image-web-3-desktop.jpg"
+							 alt="">
+				</picture>
+
+				<h1 class="ttl-lg order-1 md--order-0">The Bright Future of Web 3.0?</h1>
+
+				<div class="hero__txt grid-x order-1 md--order-0">
+					<p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+						hands
+						of
+						the people.
+						But is it really fulfilling its promise?</p>
+					<button class="btn btn--p-500">Read more</button>
+				</div>
+
+				<aside class="aside row-span-2 md--row-span-0">
+					<h2 class="ttl-md">New</h2>
+
+					<ul class="list">
+						<!-- list items -->
+					</ul>
+				</aside>
+			</div>
+		</section>
+
+		<section class="articles layout-center">
+			<!-- cards -->
+		</section>
+	</main>
+
+	<dialog class="modal">
+		<header class="main-header layout-center modal-header modal__controls">
+			<div class="main-header__group modal__controls">
+				<a href="#"
+					 class="brand-logo logo-link"
+					 aria-label="home">
+					<svg class="logo-link__img">
+						<use href="/fem-news-homepage/images/sprites/logo.svg#logo"></use>
+					</svg>
+				</a>
+
+				<button class="toggle md--d-grid modal__controls"
+								aria-label="show / hide navigation panel">
+					<span class="toggle-img"></span>
+				</button>
+			</div>
+		</header>
+
+		<nav class="modal__nav-panel layout-center"
+				 aria-label="Modal">
+			<ul class="modal__nav-links">
+				<li><a class="modal__nav-link modal__controls"
+						 href="#">Home</a></li>
+				<li><a class="modal__nav-link modal__controls"
+						 href="#">New</a></li>
+				<li><a class="modal__nav-link modal__controls"
+						 href="#">Popular</a></li>
+				<li><a class="modal__nav-link modal__controls"
+						 href="#">Trending</a></li>
+				<li><a class="modal__nav-link modal__controls"
+						 href="#">Categories</a></li>
+			</ul>
+		</nav>
+	</dialog>
+
+	
+</body>
+
+</html>
