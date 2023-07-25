@@ -19,7 +19,7 @@ var tt=Object.defineProperty;var et=(n,t,e)=>t in n?tt(n,t,{enumerable:!0,config
 	<li>
 		<a href="#" class="card md--g-auto-r--min">
 			<div class="img-container row-span-3">
-				<img class="o-fit-cover" src="/images/image-${e}.jpg" alt="${e}" />
+				<img class="o-fit-cover" src="images/image-${e}.jpg" alt="${e}" />
 			</div>
 			<h2 class="ttl-sm card__ttl">${n}</h2>
 			<p>${t}</p>
