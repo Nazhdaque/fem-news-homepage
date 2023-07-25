@@ -9,7 +9,7 @@ const cardTemplate = (title, text, img) => html`
 	<li>
 		<a href="#" class="card md--g-auto-r--min">
 			<div class="img-container row-span-3">
-				<img class="o-fit-cover" src="/images/image-${img}.jpg" alt="${img}" />
+				<img class="o-fit-cover" src="images/image-${img}.jpg" alt="${img}" />
 			</div>
 			<h2 class="ttl-sm card__ttl">${title}</h2>
 			<p>${text}</p>
