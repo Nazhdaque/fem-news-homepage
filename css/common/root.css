@@ -1,0 +1,28 @@
+:root,
+::backdrop {
+	--max-content-width: 70rem;
+	--gap: 2rem;
+
+	--clr-p-400-solid: hsl(35, 77%, 62%);
+	--clr-p-400-alpha: 35, 77%, 62%;
+	--clr-p-500-solid: hsl(5, 85%, 63%);
+	--clr-p-500-alpha: 5, 85%, 63%;
+
+	--clr-n-100-solid: hsl(36, 100%, 99%);
+	--clr-n-200-solid: hsl(233, 8%, 79%);
+	--clr-n-600-solid: hsl(236, 13%, 42%);
+	--clr-n-900-solid: hsl(240, 100%, 5%);
+	--clr-n-900-alpha: 240, 100%, 5%;
+
+	--time: 0.1s;
+	--easing: ease-in;
+
+	--logo-size: clamp(2.875rem, 10vw - 2rem, 4rem);
+	--logo-height: calc((var(--logo-size) / 65) * 40);
+
+	--header-m-top: clamp(1.75rem, 10vw - 2rem, 5.5rem);
+	--header-m-bottom: clamp(2rem, 10vw - 2rem, 3.5rem);
+	--header-height: calc(
+		var(--header-m-top) + var(--logo-height) + var(--header-m-bottom)
+	);
+}

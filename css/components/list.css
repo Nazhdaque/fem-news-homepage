@@ -1,0 +1,13 @@
+.list > * > * {
+	display: grid;
+	gap: 0.575em;
+	margin-block: 2rem;
+}
+
+.list > * > *:where(:focus-visible, :hover) .ttl-rg {
+	color: var(--clr-p-400-solid);
+}
+
+.list > * + * {
+	border-top: 0.05rem solid var(--clr-n-200-solid);
+}

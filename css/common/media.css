@@ -1,0 +1,34 @@
+@media (width <= 768px) {
+	.aside {
+		margin-top: 2rem;
+	}
+	.hero__group {
+		--gap: 1.5rem;
+	}
+	.hero__txt {
+		margin-top: -0.75rem;
+	}
+
+	/* utilities */
+	.md--d-grid {
+		display: grid;
+	}
+	.md--d-none {
+		display: none;
+	}
+	.md--col-1 {
+		--col: 1;
+	}
+	.md--col-span-0 {
+		grid-column: auto;
+	}
+	.md--row-span-0 {
+		grid-row: auto;
+	}
+	.md--order-0 {
+		order: 0;
+	}
+	.md--g-auto-r--min {
+		grid-auto-rows: min-content;
+	}
+}

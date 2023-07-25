@@ -1,0 +1,18 @@
+/* |||||||||| |||||||||| |||||||||| |||||||||| hero */
+.hero__txt {
+	place-items: start;
+	grid-auto-rows: min-content;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| aside */
+.aside {
+	background-color: var(--clr-n-900-solid);
+	color: var(--clr-n-200-solid);
+	padding: 1.75rem 1.5rem 0;
+	display: grid;
+}
+
+/* |||||||||| |||||||||| |||||||||| |||||||||| newsline */
+.articles {
+	margin-top: calc(var(--gap) * 2);
+}

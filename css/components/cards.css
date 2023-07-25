@@ -1,0 +1,32 @@
+.cards {
+	counter-reset: list-item-counter;
+}
+
+.img-container {
+	position: relative;
+}
+.img-container img {
+	position: absolute;
+	inset: 0;
+}
+
+.card {
+	display: grid;
+	grid-template-columns: 1fr 2.25fr;
+	gap: 0.75em 1.5em;
+	height: 100%;
+}
+
+.card:where(:focus-visible, :hover) .card__ttl {
+	color: var(--clr-p-500-solid);
+}
+
+.card::before {
+	counter-increment: list-item-counter;
+	content: counter(list-item-counter, decimal-leading-zero);
+	color: var(--clr-n-200-solid);
+	font-size: var(--fs-2xl);
+	font-weight: var(--fw-bd);
+	line-height: 1;
+	grid-area: 1 / 2;
+}

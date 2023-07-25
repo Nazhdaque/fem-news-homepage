@@ -1,0 +1,22 @@
+.layout-body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	padding-bottom: var(--header-height);
+}
+
+.layout-center {
+	display: grid;
+	grid-template-columns: 1fr minmax(min-content, var(--max-content-width)) 1fr;
+	padding-inline: clamp(1rem, 10vw - 2rem, var(--gap));
+}
+
+.layout-center > * {
+	grid-column: 2;
+}
+
+.main-content {
+	display: grid;
+	grid-template-rows: min-content;
+}

@@ -1,0 +1,33 @@
+.nav-links {
+	display: flex;
+	gap: 1em;
+}
+
+.nav-links__link {
+	--p-inline: 0.65em;
+
+	padding-inline: var(--p-inline);
+	display: inline-flex;
+	height: var(--logo-height);
+	align-items: center;
+	transition: color var(--time) var(--easing);
+	position: relative;
+}
+.nav-links__link:where(:focus-visible, :hover) {
+	color: var(--clr-p-500-solid);
+}
+.nav-links__link::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0.25em;
+	background: var(--clr-p-500-solid);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-inline: auto;
+	transition: width var(--time) var(--easing);
+}
+.nav-links__link:focus-visible::before {
+	width: calc(100% - var(--p-inline) * 2);
+}

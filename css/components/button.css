@@ -1,0 +1,50 @@
+.btn {
+	--btn-border-thickness: 0.15rem;
+	--btn-p-block: 1em;
+	--btn-p-inline: 2em;
+
+	color: var(--btn-clr-txt);
+	background-color: var(--btn-clr-bg);
+	border: var(--btn-border-thickness) solid var(--btn-clr-border);
+
+	font-size: inherit;
+	font-weight: var(--fw-bd);
+	line-height: 1;
+	padding: var(--btn-p-block) var(--btn-p-inline);
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	transition: color var(--time) var(--easing),
+		background-color var(--time) var(--easing),
+		border-color var(--time) var(--easing);
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.btn:where(:hover, :focus-visible) {
+	color: var(--btn-clr-txt--focus-hover);
+	background-color: var(--btn-clr-bg--focus-hover);
+	border-color: var(--btn-clr-border--focus-hover);
+}
+
+.btn:active {
+	color: var(--btn-clr-txt--active);
+	background-color: var(--btn-clr-bg--active);
+	border-color: var(--btn-clr-border--active);
+}
+
+/* |||||||||| */
+.btn--p-500 {
+	--btn-clr-txt: var(--clr-n-100-solid);
+	--btn-clr-bg: var(--clr-p-500-solid);
+	--btn-clr-border: var(--clr-p-500-solid);
+
+	--btn-clr-txt--focus-hover: var(--clr-n-100-solid);
+	--btn-clr-bg--focus-hover: var(--clr-n-900-solid);
+	--btn-clr-border--focus-hover: var(--clr-n-900-solid);
+
+	--btn-clr-txt--active: var(--clr-n-900-solid);
+	--btn-clr-bg--active: transparent;
+	--btn-clr-border--active: var(--clr-n-900-solid);
+}

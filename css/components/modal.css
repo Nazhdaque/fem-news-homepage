@@ -1,0 +1,29 @@
+.modal {
+	--modal-primary-clr: var(--clr-n-900-solid);
+
+	border: none;
+	background: none;
+	color: var(--modal-primary-clr);
+	min-width: 100%;
+	min-height: 100%;
+
+	flex-direction: column;
+	align-items: center;
+	font-size: var(--fs-lg);
+}
+.modal[open] {
+	display: flex;
+}
+
+.modal::backdrop {
+	background: hsl(var(--clr-n-900-alpha), 0.5);
+}
+
+.modal .toggle {
+	--toggle-clr: var(--modal-primary-clr);
+}
+
+/* --- */
+.modal-header {
+	visibility: hidden;
+}

@@ -1,0 +1,33 @@
+.main-header__group {
+	display: flex;
+	justify-content: space-between;
+	font-size: var(--fs-md);
+	margin-top: var(--header-m-top);
+	margin-bottom: var(--header-m-bottom);
+}
+
+.logo-link {
+	display: block;
+	width: var(--logo-size);
+	aspect-ratio: 65 / 40;
+	outline: none;
+	overflow: hidden;
+
+	transition: fill var(--time) var(--easing);
+	fill: var(--clr-logo, var(--clr-n-900-solid));
+}
+.logo-link__img {
+	width: 100%;
+	height: 100%;
+}
+
+.logo-link:where(:focus-visible, :hover) {
+	--clr-logo: var(--clr-p-400-solid);
+}
+
+/* --- */
+.header-placeholder {
+	max-height: 0;
+	overflow: hidden;
+	margin-bottom: var(--header-height);
+}

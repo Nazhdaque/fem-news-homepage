@@ -1,0 +1,57 @@
+:root {
+	--ff-rg: "Inter", sans-serif;
+
+	--fw-rg: 400;
+	--fw-bd: 700;
+	--fw-eb: 800;
+
+	--fs-xs: 0.675rem;
+	--fs-sm: 0.875rem;
+	--fs-rg: 0.9375rem;
+	--fs-md: 1rem;
+	--fs-lg: 1.125rem;
+	--fs-xl: 1.25rem;
+	--fs-2xl: 1.75rem;
+	--fs-3xl: clamp(2rem, 10vw - 2rem, 2.5rem);
+	--fs-4xl: clamp(2.5rem, 10vw - 2rem, 3.5rem);
+
+	--lh-rg: 1.65;
+}
+
+/* titles */
+.ttl-sm {
+	font-size: var(--fs-lg);
+	color: var(--clr-n-900-solid);
+	font-weight: var(--fw-eb);
+}
+.ttl-rg {
+	font-size: var(--fs-xl);
+	color: var(--clr-n-100-solid);
+}
+.ttl-md {
+	font-size: var(--fs-3xl);
+	font-weight: var(--fw-bd);
+	color: var(--clr-p-400-solid);
+}
+.ttl-lg {
+	font-size: var(--fs-4xl);
+	font-weight: var(--fw-eb);
+	color: var(--clr-n-900-solid);
+	line-height: 1.05;
+}
+
+/* text */
+.txt-xs {
+	font-size: var(--fs-xs);
+}
+.txt-sm {
+	font-size: var(--fs-sm);
+}
+.txt-rg {
+	font-size: var(--fs-rg);
+}
+.txt-md {
+	font-size: var(--fs-lg);
+}
+
+/* --- */
